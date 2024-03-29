@@ -1,0 +1,34 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background: url('https://mdbcdn.b-cdn.net/img/Photos/Others/background3.webp');
+}
+.b-center {
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.04)
+}
+.card-form-control {
+  position: relative;
+}
+.card-type {
+  position: absolute;
+  right: 7px;
+  width: 45px;
+  top: 5px;
+  transition: right 0.3s ease-in-out;
+}
+.form-control.is-invalid ~ .card-type {
+  right: 37px;
+  transition: right 0.3s ease-in-out;
+}
